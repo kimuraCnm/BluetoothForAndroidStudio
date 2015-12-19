@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Falco</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- activity_main.xml -->
+    <string name="activityUIName">NMEA-0813语句信息</string>
+    <string name="showDevices">查看已配对设备</string>
+    <string name="internetConfig">cors网络配置</string>
+    <string name="getSerial">查看序列号信息</string>
+    <string name="latiLongi">暂无经纬度信息</string>
+    <string name="date">当前时间:</string>
+    <string name="numberOfSatellite">卫星数量:</string>
+    <string name="altitude">高程信息(天线高+海拔高):</string>
+    <string name="dgps">差分龄期:</string>
+    <string name="horizontalError">水平误差:</string>
+    <string name="altitudeError">高程误差:</string>
+    <string name="baseStation">基站信息:</string>
+    <string name="hdop">水平精度因子:</string>
+    <string name="quality">解状态：</string>
+
+    <!-- configview -->
+    <string name="ipAddress">   IP:</string>
+    <string name="port">port:</string>
+    <string name="btnUpdate">刷新</string>
+    <string name="userID">用户名：</string>
+    <string name="userPwd">密  码：</string>
+    <string name="connect">连  接</string>
+    <string name="cancel">取  消</string>
+    <string name="title_activity_config">差分信息设置</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

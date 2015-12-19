@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#dcdcdc">
+
+   
+
+        <ListView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:stackFromBottom="true"
+            android:layout_weight="3"
+            android:transcriptMode="alwaysScroll"
+            android:background="@drawable/back9"></ListView>       
+   
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f6aa3e"></View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/latiLongi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/latiLongi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="@string/numberOfSatellite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/altitude"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/altitude" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/hdop"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/hdop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/quality"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="@string/quality" />
+
+            <TextView
+                android:id="@+id/dgps"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:layout_weight="1"
+                android:text="@string/dgps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/horizontalError"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:layout_weight="1"
+                android:text="@string/horizontalError" />
+
+            <TextView
+                android:id="@+id/altitudeError"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:layout_weight="1"
+                android:text="@string/altitudeError" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/baseStation"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/baseStation" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--style="?android:attr/buttonBarButtonStyle"-->
+        <Button
+            android:id="@+id/showDevices"           
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/showDevices"
+            android:onClick="onClickEvent"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@drawable/buttonselector" />
+        
+        <!--style="?android:attr/buttonBarButtonStyle"-->
+        <Button
+            android:id="@+id/internetConfig"            
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"            
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:text="@string/internetConfig"
+            android:onClick="onClickEvent"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@drawable/buttonselector" />
+        <Button
+            android:id="@+id/getSerial"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:text="@string/getSerial"
+            android:onClick="onClickEvent"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@drawable/buttonselector" 
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
